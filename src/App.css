@@ -1,6 +1,5 @@
 /* Basic styles to mimic the UI in the image */
 .book-item {
-  padding: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
   display: flex;
@@ -29,7 +28,7 @@
 
 nav {
   margin-bottom: 20px;
-  padding:  0 4rem;
+  padding: 0 4rem;
 }
 
 nav a {
@@ -37,16 +36,35 @@ nav a {
   color: white;
 }
 
+h1 {
+  color: #1e88e5;
+  text-align: center;
+}
+
 nav h1 {
   color: white;
 }
 
-form input, form select {
+input {
+  padding: 8px;
+  margin-right: 8px;
+  flex: 1;
+}
+
+form input,
+form select {
   margin-right: 10px;
   padding: 5px;
   font-size: 16px;
 }
 
+button {
+  padding: 8px 16px;
+  background-color: #1e88e5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
 
 button:hover {
   background-color: #0056b3;
@@ -59,29 +77,10 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
-  color: #1E88E5;
-  text-align: center;
-}
-
 form {
   display: flex;
   justify-content: space-between;
   margin: 16px 0;
-}
-
-input {
-  padding: 8px;
-  margin-right: 8px;
-  flex: 1;
-}
-
-button {
-  padding: 8px 16px;
-  background-color: #1E88E5;
-  color: #fff;
-  border: none;
-  cursor: pointer;
 }
 
 .footer {
