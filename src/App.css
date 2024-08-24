@@ -1,0 +1,67 @@
+/* Basic styles to mimic the UI in the image */
+.book-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  /* margin-bottom: 10px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.book-item div {
+  margin-right: 10px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+form input, form select {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #1E88E5;
+  text-align: center;
+}
+
+.bookform-container {
+  padding: 2rem;
+  background-color: rgb(209, 238, 246);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+input {
+  padding: 8px;
+  margin-right: 8px;
+  flex: 1;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #1E88E5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
