@@ -26,31 +26,33 @@ const BooksPage = () => {
 
     return (
         <div>
-            <h2>Bookstore CMS</h2>
-            <BookList />
-            <h3>Add a new book</h3>
-            <form onSubmit={handleAddBook}>
-                <input 
-                    type="text" 
-                    placeholder="Book Title" 
-                    value={title}
-                    onChange={(e) => setTitle(e.target.value)}
-                    required
-                />
-                <input 
-                    type="text" 
-                    placeholder="Author" 
-                    value={author}
-                    onChange={(e) => setAuthor(e.target.value)}
-                    required
-                />
-                <CategoryList 
-                    onChange={(e) => setCategory(e.target.value)} 
-                />
-                <button type="submit">Add book</button>
-            </form>
-            <footer>
-                <p>Tiago Lelinski Marin 2022 MIT copyright</p>
+            <div className='bookform-container'>
+                <BookList />
+                <h3>Add A NEW BOOK</h3>
+                <form onSubmit={handleAddBook}>
+                    <input 
+                        type="text" 
+                        placeholder="Book Title" 
+                        value={title}
+                        onChange={(e) => setTitle(e.target.value)}
+                        required
+                    />
+                    <input 
+                        type="text" 
+                        placeholder="Author" 
+                        value={author}
+                        onChange={(e) => setAuthor(e.target.value)}
+                        required
+                    />
+                    <CategoryList 
+                        onChange={(e) => setCategory(e.target.value)} 
+                    />
+                    <button type="submit">Add book</button>
+                </form>
+            </div>
+            
+            <footer className='footer'>
+                <p>Charzy global services 2024 CGS copyright</p>
             </footer>
         </div>
     );

@@ -8,7 +8,8 @@ import './App.css';
 function App() {
     return (
         <Router>
-            <nav>
+            <nav className='header'>
+            <h1>Bookstore CMS</h1>
                 <Link to="/books">Books</Link>
                 <Link to="/categories">Categories</Link>
             </nav>

@@ -7,8 +7,8 @@ const CategoriesPage = () => {
             <div>
                 {/* Categories content */}
             </div>
-            <footer>
-                <p>Tiago Lelinski Marin 2022 MIT copyright</p>
+            <footer className='footer'>
+                <p>Charzy global services 2024 CGS copyright</p>
             </footer>
         </div>
     );
