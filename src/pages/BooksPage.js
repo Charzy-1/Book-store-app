@@ -7,11 +7,15 @@ import { addBook } from '../redux/actions';
 const BooksPage = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-  const [category, setCategory] = useState('Thriller');
+  const [category, setCategory] = useState(''); // Start with an empty category
   const dispatch = useDispatch();
 
   const handleAddBook = (e) => {
     e.preventDefault();
+    if (!category) {
+      alert('Please select a category!');
+      return;
+    }
     const newBook = {
       id: Date.now(), // using Date.now() as a simple ID
       title,
@@ -22,6 +26,7 @@ const BooksPage = () => {
     dispatch(addBook(newBook));
     setTitle('');
     setAuthor('');
+    setCategory(''); // Reset category to empty after adding
   };
 
   return (
@@ -45,14 +50,16 @@ const BooksPage = () => {
             required
           />
           <CategoryList
+            value={category}
             onChange={(e) => setCategory(e.target.value)}
+            // Update category state with selected value
           />
           <button type="submit">Add book</button>
         </form>
       </div>
 
       <footer className="footer">
-        <p>Charzy global services 2024 CGS copyright</p>
+        <p>Charzy Global Services 2024 CGS copyright</p>
       </footer>
     </div>
   );

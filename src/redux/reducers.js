@@ -1,10 +1,6 @@
 const initialState = {
-  books: [
-    {
-      id: 1, title: 'Book 1', author: 'James', category: 'Thriller', progress: 0,
-    },
-  ],
-  categories: ['Thriller', 'Historical', 'Romance'],
+  books: [], // Start with an empty array of books
+  categories: ['Thriller', 'Historical', 'Romance', 'Fantasy', 'Dystopian', 'Western', 'Horror'],
 };
 
 function rootReducer(state = initialState, action) {
