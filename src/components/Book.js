@@ -12,22 +12,33 @@ const Book = ({ book }) => {
 
   return (
     <div className="book-item">
-      <div>{book.category}</div>
-      <div>{book.title}</div>
-      <div>{book.author}</div>
-      <div>
-        {book.progress}
-        % Completed
+      <div className="book-details">
+        <div className="category">{book.category}</div>
+        <div className="title-author">
+          <h2 className="title">{book.title}</h2>
+          <p className="author">{book.author}</p>
+        </div>
+        <div className="actions">
+          <button type="button" className="comments">Comments</button>
+          <button type="button" onClick={handleRemoveBook}>Remove</button>
+          <button type="button">Edit</button>
+        </div>
       </div>
-      <button type="button">Update Progress</button>
-      {' '}
-      {/* Specify the type attribute */}
-      <button type="button">Edit</button>
-      {' '}
-      {/* Specify the type attribute */}
-      <button type="button" onClick={handleRemoveBook}>Remove</button>
-      {' '}
-      {/* Specify the type attribute */}
+      <div className="progress-container">
+        <div className="circular-progress">
+          {/* Placeholder for circular progress UI */}
+        </div>
+        <div className="progress-details">
+          <p>
+            {book.progress}
+            %
+          </p>
+          <p>Completed</p>
+        </div>
+        <div className="update-progress">
+          <button type="button">Update Progress</button>
+        </div>
+      </div>
     </div>
   );
 };

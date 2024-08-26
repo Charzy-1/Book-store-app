@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router, Route, Routes, Link,
+  BrowserRouter as Router, Route, Routes, Link, Navigate,
 } from 'react-router-dom';
 import BooksPage from './pages/BooksPage';
 import CategoriesPage from './pages/CategoriesPage';
@@ -15,6 +15,9 @@ function App() {
         <Link to="/categories">Categories</Link>
       </nav>
       <Routes>
+        <Route path="/" element={<Navigate to="/books" replace />} />
+        {' '}
+        {/* Redirect root to /books */}
         <Route path="/books" element={<BooksPage />} />
         <Route path="/categories" element={<CategoriesPage />} />
       </Routes>

@@ -86,3 +86,84 @@ form {
 .footer {
   text-align: center;
 }
+.book-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  font-size: 14px;
+  color: #888;
+}
+
+.title-author {
+  margin-top: 4px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.author {
+  font-size: 14px;
+  color: #1e88e5;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  color: #1e88e5;
+  padding: 0;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  text-decoration: underline;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.circular-progress {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #ddd;
+}
+
+.progress-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  line-height: 30px;
+}
+
+.progress-details p {
+  margin: 0;
+  text-align: center;
+}
+
+.update-progress button {
+  background-color: #1e88e5;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.update-progress button:hover {
+  background-color: #0056b3;
+}
+
