@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchBooks } from '../redux/booksSlice'; 
+import { fetchBooks } from '../redux/booksSlice';
 import Book from './Book';
 
 const BookList = () => {
