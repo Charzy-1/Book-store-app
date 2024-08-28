@@ -2,7 +2,6 @@ import React from 'react';
 
 const CategoriesPage = () => (
   <div>
-    <h2>Categories</h2>
     <div>
       {/* Categories content */}
     </div>
